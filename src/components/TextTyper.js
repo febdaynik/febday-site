@@ -27,7 +27,12 @@ const TextTyper=({
 		typingRender(text, setTypedText, interval);
 	}, [text, interval]);
 
-	return <Markup>{typedText}</Markup>
+	return (
+		<>
+			<Markup id="style-text">{typedText}</Markup>
+			<style>{typedText}</style>
+		</>
+	)
 }
 
 export default TextTyper
