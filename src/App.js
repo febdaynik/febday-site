@@ -1,11 +1,14 @@
 import './styles/App.css';
-import Menu from './components/Menu/menu'
+import AnimatedRoutes from './components/AnimatedRoutes';
+import {BrowserRouter as Router} from 'react-router-dom'
 
 
 function App() {
 	return (
 		<div className="App">
-			<Menu />
+			<Router>
+				<AnimatedRoutes />
+			</Router>
 		</div>
 	);
 }

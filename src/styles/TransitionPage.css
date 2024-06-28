@@ -1,0 +1,30 @@
+@keyframes flowFrame {
+    0% { 
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5) translate(-30%, 5%) ;
+    }
+    100% {
+        transform: scale(8) translate(-30%, 5%);
+    }
+}
+
+@keyframes outflowFrame {
+    100% { 
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5) translate(-30%, 5%) ;
+    }
+    0% {
+        transform: scale(8) translate(-30%, 5%);
+    }
+}
+
+.background-menu-block-animation{
+    animation: flowFrame 3s ease-in-out;
+}
+.background-menu-block-out-animation{
+    animation: outflowFrame 3s ease-in-out;
+}
