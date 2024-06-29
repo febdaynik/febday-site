@@ -42,7 +42,7 @@ const animateOut = async () => {
 }
 
 const githubClick = (value) => {
-	window.open("https://github.com/febdaynik/");
+	window.open("https://github.com/febdaynik/febday-site");
 };
 
 export default function Menu() {
