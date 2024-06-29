@@ -13,7 +13,7 @@ const CustomLink = ({ to, onClick, children }) => {
   };
 
   return (
-    <a data-href={to} onClick={handleClick}>
+    <a href={to} data-href={to} onClick={handleClick}>
       {children}
     </a>
   );

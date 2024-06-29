@@ -20,7 +20,7 @@ a{
 	width: calc(100% / 4.5);
 	padding: 0 50px;
 	background-attachment: fixed;
-	overflow: hidden;;
+	/* overflow: hidden; */
 	box-shadow: 0px 0px 20px 20px #000000c4;
 	backdrop-filter: blur(8px);
 }
@@ -63,6 +63,8 @@ a{
 .menu-footer{
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+    justify-content: center;
 	font-weight: 800;
 }
 .menu-footer > div{
@@ -75,3 +77,4 @@ a{
 	width: 30px;
 	height: 30px;
 }
+

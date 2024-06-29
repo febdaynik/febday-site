@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 import "../../styles/Menu.css";
 import "../../styles/TransitionPage.css";
 import githubLogo from "../../images/github-mark-white.png"
 import CustomLink from "../AnimateLink"
+import ButtonAnimate from "./buttonAnimate"
 
 
 const animateTemplate = async (
@@ -20,8 +19,10 @@ const animateTemplate = async (
 	backgroundMenu.classList.remove(className);
 }
 
-
-async function animateIn() {
+const animateIn = async () => {
+	if ( localStorage.getItem('animate') !== null && !Number(localStorage.getItem('animate')))
+		return 
+	
 	const menuBlock = document.querySelector('.menu-block');
 
 	menuBlock.style.opacity = 0;
@@ -29,7 +30,10 @@ async function animateIn() {
 	return await animateTemplate('background-menu-block-animation', 2800)
 }
 
-async function animateOut() {
+const animateOut = async () => {
+	if ( localStorage.getItem('animate') !== null && !Number(localStorage.getItem('animate')) )
+		return 
+
 	const menuBlock = document.querySelector('.menu-block');
 
 	menuBlock.style.opacity = 1;
@@ -45,7 +49,12 @@ export default function Menu() {
 
 	
 	return (
-		<>
+		<motion.div 
+			animate="active"
+			exit={{opacity: 0}}
+			onAnimationStart={animateOut}
+			style={{height: '100%', width: '100%'}}
+		>
 			<div className="menu-block">
 				<div>
 					<div className="div-h1-block">
@@ -63,14 +72,11 @@ export default function Menu() {
 						</div>
 					</div>
 				</div>
+				<ButtonAnimate />
+
 			</div>
-			<motion.div
-				animate="active"
-				exit={{opacity: 0}}
-				onAnimationStart={animateOut}
-				className="background-menu-block"
-			></motion.div>
-		</>
+			<div className="background-menu-block"/>
+		</motion.div>
 	);
 
 }
