@@ -7,10 +7,17 @@
     --light: #f2f2f2;
     --dark: #131313;
     --dark-light: #595959;
+    --background-terminal-color: #380428e6;
     --hover-header-button: #3f3f3f;
-    --maker-activate-app: #da4f21;
+    --marker-activate-app: #da4f21;
+    --marker-desktop-folder: #b13f20d2;
+    --hover-desktop-folder: #606463a9;
+
+    --terminal-green: #25955b;
+    --terminal-blue: #1a63a3; 
 
     --height-header: 35px;
+    --width-left-menu: 70px;
 }
 
 .desktop-block {
@@ -78,7 +85,7 @@
 }
 
 .left-menu-block {
-    width: 70px;
+    width: var(--width-left-menu);
     height: calc(100% - var(--height-header) - 10px);
     background-color: #131313e8;
     position: absolute;
@@ -117,7 +124,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: var(--maker-activate-app);
+    background-color: var(--marker-activate-app);
 } 
 
 .left-menu-footer-block{
@@ -143,7 +150,6 @@
     width: 7px;
     height: 7px;
 }
-
 
 /* Icons */
 .ui-network-icon > g > path{
@@ -176,7 +182,7 @@
 
 
 /* Active */
-.left-menu-block > img:active {
+.left-menu-block > .image-app:active {
     background: none;
     animation: click_image_left_block .3s linear;
 }

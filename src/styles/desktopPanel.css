@@ -1,0 +1,173 @@
+.desktop-block  > .desktop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.desktop > .desktop-panel {
+    width: calc(100% - var(--width-left-menu));
+    height: calc(100% - var(--height-header)) - 10px;
+    margin-top: var(--height-header);
+    margin-left: var(--width-left-menu);
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.desktop-panel > div {
+    width: 100%;
+    height: 100%;
+}
+.desktop-panel > div > .folder-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.folder-block > .folder{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+    order: -1;
+}
+.folder-block > .title{
+    font-size: 15px;
+    font-weight: 200;
+    padding: 4px 5px;
+    border-radius: 5px;
+}
+
+.desktop > .terminal-block {
+    background-color: var(--background-terminal-color);
+    width: 50%;
+    height: 50%;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px 5px;
+    box-shadow: 4px 4px 3px #00000073;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.terminal-block > .terminal-header-block {
+    width: 100%;
+    height: 32px;
+    background-color: #222;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.terminal-header-block > span {
+    font-size: 14px;
+}
+.terminal-header-block > .action-button-block {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.terminal-header-block > .action-button-block > .-button {
+    cursor: pointer;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: #363636;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.terminal-block > .terminal-textarea {
+    width: 100%;
+    height: calc(100% - 32px);
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    overflow: auto;
+}
+.terminal-textarea > p {
+    margin: 0;
+    padding: 5px;
+}
+.terminal-textarea > p.command-ls{
+    margin-left: 10px;
+}
+
+
+/* Виды папок */
+.folder-default {
+    background: url('../images/icons_ubuntu/256x256/places/folder.png');
+}
+.folder-user-home {
+    background: url('../images/icons_ubuntu/256x256/places/user-home.png');
+}
+.folder-document {
+    background: url('../images/icons_ubuntu/256x256/places/folder-documents.png');
+}
+.folder-download {
+    background: url('../images/icons_ubuntu/256x256/places/folder-download.png');
+}
+.folder-user-trash {
+    background: url('../images/icons_ubuntu/256x256/places/user-trash.png');
+}
+
+/* Цвета в терминале */
+.terminal-textarea span.terminal-green {
+    font-weight: 600;
+    color: var(--terminal-green);
+}
+.terminal-textarea span.terminal-blue {
+    font-weight: 600;
+    color: var(--terminal-blue);
+}
+
+/* Скроллбар для терминала */
+.terminal-textarea::-webkit-scrollbar {
+    width: 11px;
+}
+  
+.terminal-textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #a6a7a9;
+    border: 3px solid var(--background-terminal-color);
+}
+
+/* Hovers */
+.folder:hover {
+    cursor: pointer;
+    background-color: var(--hover-desktop-folder);
+}
+.folder:hover + .title {
+    background-color: var(--hover-desktop-folder);
+}
+.title:hover{
+    cursor: pointer;
+    background-color: var(--hover-desktop-folder);
+}
+.title:hover ~ .folder {
+    background-color: var(--hover-desktop-folder);
+}
+.terminal-header-block > .action-button-block > .-button:hover {
+    background-color: #444444;
+}
+
+/* Active */
+.folder-block:active .folder{
+    background-color: var(--marker-desktop-folder);
+}
+.folder-block:active .title {
+    background-color: var(--marker-desktop-folder);
+}
