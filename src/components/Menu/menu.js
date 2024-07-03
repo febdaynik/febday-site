@@ -61,12 +61,12 @@ export default function Menu() {
 			<div className="menu-block">
 				<div>
 					<div className="div-h1-block">
-						<h1>MENU</h1>
+						<h1>МЕНЮ</h1>
 					</div>
 					<nav className="menu-block-nav">
-						<div><span><CustomLink to="/desktop/botofolio" onClick={ animateIn }>Botofoilio</CustomLink></span></div>
-						<div><span><CustomLink to="/desktop/about" onClick={ animateIn }>About</CustomLink></span></div>
-						<div><span><CustomLink to="/desktop/contact" onClick={ animateIn }>Contact</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/botofolio" onClick={ animateIn }>Ботофолио</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/about" onClick={ animateIn }>Обо мне</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/contact" onClick={ animateIn }>Контакты</CustomLink></span></div>
 					</nav>
 					<div className="menu-footer">
 						<div id="githubbbutton" onClick={githubClick}>

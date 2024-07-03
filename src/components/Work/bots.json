@@ -1,0 +1,60 @@
+[  
+    {
+        "name": "Гороскоп бот",
+        "type": "new",
+        "isPrivate": false,
+        "url": "https://t.me/HoroscopeOfTheDay_bot",
+        "image": "https://cdn4.cdn-telegram.org/file/uFBpMJ3JIloAmy9Z6Cf_nhql9-a7bSTsxXVUt2KkQEWjR5zNyt2CVu2kjKikAunj9klER1phXlp_UJ50exb09ru2G0v0RUcKSWrrT1caD7Z-ZbNEqnCxFvGZ3A2yhqhDPiTneRsM-FOONrVg620X3XuRKl7Hj3epH1DkKC8pXUFswvNgVyFlVhZQ-TMV0HwYLv-7ZFo8Wj5dqCKSVsoGbOmUevDm5YA1eqymJGJ1l8udq-9Wn1d3BVsysIeDTL7zQceEG4RH4VnRrzyk4HztoHCkPJ06Q2MNsggdHqwmfbwlEufp1UUKuafoH_-7TgY5dgPPTSIpAeDez6oo3oXAHg.jpg"
+    },
+    {
+        "name": "КиноМагнат",
+        "type": "new",
+        "isPrivate": false,
+        "url": "https://t.me/KinoMaggnat_bot",
+        "image": "https://cdn4.cdn-telegram.org/file/Cv8j6z_t7Gxcr2ertqIsUYaSmb22quyafrsTi8g7QjCo6IIE9qnJKToFMNhygd6_5ZG57ONDidCaFcgrZbuZoukF4VbUm0w1gfLB2hrEpINtnqyk1s7Mm98bTV1N3ljKdy0PnL9Bb8k7etcyC6DMoUu1wdM1t3ytt471VAOjO40OZcrZUr6arMdWt3UmpKjWm6qQrISxSrCRetBkcfzopMMqO9qTjlTwPgRM9O7QMZK-2egasq2PhROl3DFDwp1Yz29-mJ_uRQNBPi_-dLaHpaZ673D2f0hU_0745Rclrj8kH6zBntVNQ0803eQw1RYNqK69KDowpRUIv85YNKnUcw.jpg"
+    },
+    {
+        "name": "DOMO",
+        "type": "new",
+        "isPrivate": true,
+        "url": "https://t.me/domohotels_bot",
+        "image": "https://cdn4.cdn-telegram.org/file/K3fVX06U0iyVjFMIEnZ4H3FIlX9iCXBu_7hbXKUkXMovkTX0VzG4RvWVuFEcAuzET_4vlBxr9Izo_hsNYwM-tglzAA266UO_61FnZVC0f2ez7Qcrb2WKpN2TDieTEzTqDbdlNforHHPy3e1VvKy6ikaC9yirTRYU9EEgXxAtWvrtzNHvbnkZY6YNmqH7RT9WUnQA8gyik6NNHc-5z76dwR0oQfvifPjY3BSDrdtpmjvsii6GS-LKxK9TmFLxPQbaMlaDTcB6tI82bUnYLSyRyGntNGCNQN4A-lHnIK_r1-Ae76rVbRVuiwe_JTRg43eexixviNKLNHjCuKZV5AemwA.jpg"
+    },
+    {
+        "name": "Радио бот",
+        "type": "coming soon",
+        "isPrivate": false,
+        "url": null
+    }, 
+    {
+        "name": "Орфоэпия бот",
+        "type": "new",
+        "isPrivate": false,
+        "url": "https://t.me/OrthoepyRobot",
+        "image": "https://cdn4.cdn-telegram.org/file/uDDkOmgnCFEFuuW0O2Jg_GOHR4GCpm3NRqKdhwAF8wjx5-0pEFOm0yYPMKqBgjbXcby5SFDb0wQ02E4RLMi_SQU-hNLP8Lx0gb3j2uHE8dEJrneFsh2vW9PwFRC33oIaeDtHx_nimz6EstuLlPFhtOEQD2UyHXsDpq1x4Vay4ng9sqF0XRSff7rYcxADKVnLci2dQHfgG9TvCDrdj83Lyc8qmr_NolRMD-fWymZNZavGwqhkdB23ssoeCZTsWWR3gJj2ACRfUPIeATG-5J0jmQJ9rCvvEwBA9hWZ4KR6bROfrHJgUADRBitKJ5bCs7QiUukCacMSXwC2aFSaRBp1kQ.jpg"
+    },
+    {
+        "name": "Бот для важных переговоров (мемы)",
+        "type": "new",
+        "isPrivate": false,
+        "url": "https://t.me/sendmyvideo_bot"
+    },
+    {
+        "name": "Бот для платных подписок",
+        "type": "old",
+        "isPrivate": true,
+        "url": "https://t.me/Subscribe7bot"
+    },
+    {
+        "name": "Бот для поиска музыки",
+        "type": "old",
+        "isPrivate": false,
+        "url": "https://t.me/Allvolume_bot"
+    },
+    {
+        "name": "DiaryBot",
+        "type": "old",
+        "isPrivate": true,
+        "url": "https://t.me/diarytpi_bot"
+    }
+]

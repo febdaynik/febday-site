@@ -18,7 +18,7 @@ export default function TerminalComponent() {
                 </div>
                 <div className="terminal-textarea">
                     <p><span className="terminal-green">root@febday</span>:<span className="terminal-blue">~</span>$ ls</p>
-                    <p className="command-ls"><span className="terminal-blue">Ботофолио &ensp;&ensp; 'Обо мне' &ensp;&ensp; Контакты</span></p>
+                    <p className="command-ls"><span className="terminal-blue">Ботофолио &ensp;&ensp; Обо-мне.txt &ensp;&ensp; Контакты.txt</span></p>
                     <p><span className="terminal-green">root@febday</span>:<span className="terminal-blue">~</span>$</p>
                 </div>
             </div>

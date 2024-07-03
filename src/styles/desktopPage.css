@@ -126,6 +126,30 @@
     border-radius: 50%;
     background-color: var(--marker-activate-app);
 } 
+.tooltip-folder {
+  visibility: hidden;
+  background-color: var(--hover-desktop-folder);
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity .5s;
+  transition-timing-function: cubic-bezier(0.99, -1.28, 0.95, -0.28);
+  z-index: 1;
+}
+.tooltip-folder.tooltip-folder-right {
+    position: absolute;
+    bottom: 25%;
+    left: 120%;
+}
+
+/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.image-app:hover .tooltip-folder {
+    visibility: visible;
+    opacity: 1;
+  }
 
 .left-menu-footer-block{
     width: 90%;

@@ -17,8 +17,8 @@ export default function DesktopPanelComponent() {
 
     return (
        <>
-        <ExplorerComponent/>
         <TerminalComponent />
+        <ExplorerComponent/>
         <div className="desktop-panel">
             {gridLayout.map((index) => {
                 return (index === 11 ? 

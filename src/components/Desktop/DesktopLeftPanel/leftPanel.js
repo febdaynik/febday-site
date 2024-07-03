@@ -7,10 +7,19 @@ export default function LeftPanelComponent() {
 
     return (
         <div className="left-menu-block">
-            <div className="image-app active"><img src={filemanager_image} alt="filemanage-app" className="filemanage-app-image"/></div>
-            <div className="image-app active"><img src={cmd_image} alt="cmd-app" className="cmd-app-image"/></div>
+            <div className="image-app active">
+                <img src={filemanager_image} alt="filemanage-app" className="filemanage-app-image"/>
+                <div className="tooltip-folder tooltip-folder-right">Файлы</div>
+            </div>
+            <div className="image-app active">
+                <img src={cmd_image} alt="cmd-app" className="cmd-app-image"/>
+                <div className="tooltip-folder tooltip-folder-right">Терминал</div>
+            </div>
             <div className="space" />
-            <div className="image-app"><img src={userTrash_image} alt="user-trahs" className="userTrash-image"/></div>
+            <div className="image-app">
+                <img src={userTrash_image} alt="user-trahs" className="userTrash-image"/>
+                <div className="tooltip-folder tooltip-folder-right">Корзина</div>
+            </div>
             
             <div className="left-menu-footer-block">
                 {tempSpan.map((index) => (<span className="circle" key={index}></span>))}

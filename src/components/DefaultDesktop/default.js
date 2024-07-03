@@ -1,14 +1,8 @@
 import { Link } from 'react-router-dom';
+import folders from './folders.json'
 
 
 export default function DefaultExplorerComponent() {
-    const folders = [
-        ['botofolio', 'Ботофолио', 'folder-default'],
-        ['about', 'Обо мне', 'folder-default'],
-        ['contact', 'Контакты', 'folder-default'],
-        ['trash', 'Корзина', 'folder-user-trash'],
-    ];
-
     return (
         <div className="explorer-list-files">
             {folders.map((block) => (
