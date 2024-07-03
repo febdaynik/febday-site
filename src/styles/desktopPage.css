@@ -42,7 +42,7 @@
     font-size: 15px;
     font-weight: 100;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .desktop-header > .multi-page-hover {
@@ -90,7 +90,7 @@
     background-color: #131313e8;
     position: absolute;
     top: var(--height-header);
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-content: flex-start;
@@ -193,5 +193,20 @@
     to { 
         opacity: .5;
         transform: scale(1.5); 
+    }
+}
+.desktop-block {
+    animation: animate_page 1s ease-in-out;
+}
+@keyframes animate_page {
+    from { 
+        opacity: 0;
+        transform: scale(0.5);
+        filter: blur(200px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: none;
     }
 }

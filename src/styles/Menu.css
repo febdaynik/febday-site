@@ -78,3 +78,36 @@ a{
 	height: 30px;
 }
 
+.computer-screen{
+	cursor: pointer;
+    position: absolute;
+	background-color: #15100c;
+    width: 13%;
+	height: 35.5%;
+    right: 14.4%;
+    top: 26.4%;
+    transform: 
+		rotateY(358deg) 
+		skewX(358.5deg) 
+		skewY(361.5deg);
+	transition: background-image .5s linear;
+	
+}
+.computer-screen::after{
+	cursor: pointer;
+    content: "";
+    position: absolute;
+	background-color: #15100c;
+    border-radius: 6px / 50%;
+    width: 100%;
+    height: 100%;
+	top: 0;
+	right: 10px;
+	transition: background-image 0.2s ease;
+}
+.computer-screen:hover{
+	background-color: #1f1914;
+}
+.computer-screen:hover::after{
+	background-color: #1f1914;
+}

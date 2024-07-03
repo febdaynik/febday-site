@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const CustomLink = ({ to, onClick, children }) => {
+const CustomLink = ({ to, onClick, style, children }) => {
   const navigate = useNavigate();
 
   const handleClick = async (event) => {
@@ -13,7 +13,7 @@ const CustomLink = ({ to, onClick, children }) => {
   };
 
   return (
-    <a href={to} data-href={to} onClick={handleClick}>
+    <a href={to} data-href={to} style={style} onClick={handleClick}>
       {children}
     </a>
   );

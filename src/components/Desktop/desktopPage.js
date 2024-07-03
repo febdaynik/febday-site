@@ -1,45 +1,14 @@
-import { motion } from 'framer-motion';
-
-import Botofolio from '../Work/botofolio';
-import About from '../About/about';
-import Contact from '../Contact/contact';
-
-import '../../styles/desktopPage.css'
-
 import WatchComponent from './WatchBlock/watch';
 import SettingComponent from './SettingBlock/setting';
 import LanguageComponent from './LanguageBlock/language';
 import LeftPanelComponent from './DesktopLeftPanel/leftPanel';
 import DesktopPanelComponent from './DesktopPanel/desktopPanel';
 
-
-
-const renderSwitch = (param) => {
-    switch(param) {
-        case 'botofolio':
-            return <Botofolio />;
-        case 'about':
-            return <About />;
-        case 'contact':
-            return <Contact />;
-        default:
-            return null;
-    }
-}
-
-
-export default function DesktopPage({
-    path
-}) {
-    console.log(path)
+export default function DesktopPage() {
+    import('../../styles/desktopPage.css')
 
     return (
-        <motion.div 
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
-            className='desktop-block'
-        >
+        <div className='desktop-block'>
             <header className="desktop-header">
                 <div className="hover-header multi-page-hover">
                     <div className="multi-page-button selected" />
@@ -56,9 +25,8 @@ export default function DesktopPage({
             
             <div className="desktop">
                 <DesktopPanelComponent />
-                {renderSwitch(path)}
             </div>
-        </motion.div>
+        </div>
     )
 
 }

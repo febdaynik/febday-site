@@ -28,7 +28,7 @@
     align-items: center;
     text-align: center;
 }
-.folder-block > .folder{
+.folder-block > .folder, .explorer-folder-block .folder{
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -45,16 +45,19 @@
     border-radius: 5px;
 }
 
-.desktop > .terminal-block {
-    background-color: var(--background-terminal-color);
+.desktop > .visual-draggable-block { 
+    /* Это общий стиль для всплывашек по типу терминал, проводника и т.п. */
     width: 50%;
     height: 50%;
 
     position: absolute;
-    top: 10%;
-    left: 10%;
     border-radius: 10px 5px;
-    box-shadow: 4px 4px 3px #00000073;
+    box-shadow: 4px 4px 8px #00000073;
+}
+
+.desktop > .terminal-block {
+    top: 20%;
+    left: 40%;
     font-family: 'Ubuntu Mono', monospace;
 }
 .terminal-block > .terminal-header-block {
@@ -80,7 +83,7 @@
     align-items: center;
     text-align: center;
 }
-.terminal-header-block > .action-button-block > .-button {
+.action-button-block > .-button {
     cursor: pointer;
     font-size: 10px;
     width: 18px;
@@ -91,12 +94,14 @@
 }
 
 .terminal-block > .terminal-textarea {
+    background-color: var(--background-terminal-color);
     width: 100%;
     height: calc(100% - 32px);
     user-select: text;
     -moz-user-select: text;
     -webkit-user-select: text;
     overflow: auto;
+    border-radius: 0 0 5px 5px;
 }
 .terminal-textarea > p {
     margin: 0;
@@ -106,6 +111,164 @@
     margin-left: 10px;
 }
 
+.desktop > .explorer-block {
+    top: 10%;
+    left: 10%;
+    outline: 2px solid #3b3b3bcc;
+    outline-offset: -2px;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+.explorer-block > .explorer-blocks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.explorer-block > .explorer-header-block {
+    position: absolute;
+    padding: 6px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.explorer-header-block .explorer-header-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+.explorer-header-block > .explorer-header-title:nth-child(1) {
+    margin-left: 9%;
+}
+.explorer-header-block > .header-title-block {
+    background-color: #343434;
+    width: 30%;
+    padding: 6px 5px 10px 10px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.explorer-header-block > .header-title-block > svg {
+    width: 15px;
+    height: 15px;
+    padding-right: 8px;
+}
+.explorer-header-block > .header-title-block > svg path{
+    fill: var(--white);
+}
+.explorer-header-block > .action-button-block {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.explorer-blocks > .explorer-left-block{
+    width: 200px;
+    background-color: #303030;
+    border-radius: 10px 0 0 10px;
+    padding: 0 5px;
+    position: relative;
+}
+.explorer-left-block > div:nth-child(1) {
+    display: flex;
+    height: calc(100% - 45px);
+    flex-direction: column;
+    margin-top: 45px;
+}
+.explorer-left-block > div > .explorer-left-link-folder {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.explorer-left-block > div > .explorer-left-link-folder svg {
+    height: 18px;
+    width: 18px;
+    padding-right: 15px;
+}
+.explorer-left-block > div > .explorer-left-link-folder svg  path {
+    fill: var(--white);
+}
+
+.explorer-blocks > .explorer-right-block{
+    width: calc(100% - 200px);
+    background-color: #1e1e1e;
+    border-radius: 0 10px 10px 0;
+}
+.explorer-right-block > .explorer-list-files{
+    height: calc(100% - 45px);
+    width: 100%;
+    margin-top: 45px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 25%;
+    overflow: auto;
+}
+.explorer-list-files > .explorer-folder-block {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.explorer-folder-block > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.explorer-folder-block .title {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 4px 0;
+}
+
+.header-pagination{
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-pagination > .header-pag-button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+}
+.header-pagination > .header-pag-button > svg > path {
+    fill: #373737;
+}
+.header-pagination > .header-pag-button.active > svg > path{
+    fill: var(--white);
+}
+
+.empty-folder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5a5a5a;
+}
+.empty-folder > svg {
+    width: 25%;
+    height: 25%;
+}
+.empty-folder > svg > path {
+    fill: #5a5a5a;
+}
 
 /* Виды папок */
 .folder-default {
@@ -144,30 +307,63 @@
     background-color: #a6a7a9;
     border: 3px solid var(--background-terminal-color);
 }
+.terminal-textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #c7c9cc;
+}
+
+/* Скроллбар для проводника */
+.explorer-list-files::-webkit-scrollbar {
+    width: 15px;
+}
+.explorer-list-files::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a6a7a9;
+    border: 6px solid #1e1e1e;
+}
+.explorer-list-files::-webkit-scrollbar-track{
+    background-color: #1e1e1e;
+}
+.explorer-list-files::-webkit-scrollbar-thumb:hover {
+    border-width: 5px;
+    background-color: #c7c9cc;
+}
+
 
 /* Hovers */
-.folder:hover {
+.folder-block > .folder:hover {
     cursor: pointer;
     background-color: var(--hover-desktop-folder);
 }
-.folder:hover + .title {
+.folder-block > .folder:hover + .title {
     background-color: var(--hover-desktop-folder);
 }
-.title:hover{
+.folder-block > .title:hover{
     cursor: pointer;
     background-color: var(--hover-desktop-folder);
 }
-.title:hover ~ .folder {
+.folder-block > .title:hover ~ .folder {
     background-color: var(--hover-desktop-folder);
 }
-.terminal-header-block > .action-button-block > .-button:hover {
+.action-button-block > .-button:hover {
     background-color: #444444;
+}
+.explorer-left-link-folder:hover{
+    background-color: #444444;
+}
+.explorer-folder-block:hover {
+    background-color: var(--hover-desktop-folder);
 }
 
 /* Active */
 .folder-block:active .folder{
     background-color: var(--marker-desktop-folder);
 }
-.folder-block:active .title {
+.folder-block:hover:active .title {
+    background-color: var(--marker-desktop-folder);
+}
+.explorer-left-block .explorer-left-link-folder:active:hover {
+    background-color: #515151;
+}
+.explorer-folder-block:active:hover {
     background-color: var(--marker-desktop-folder);
 }

@@ -53,17 +53,20 @@ export default function Menu() {
 			animate="active"
 			exit={{opacity: 0}}
 			onAnimationStart={animateOut}
-			style={{height: '100%', width: '100%'}}
-		>
+			style={{height: "100%", width: "100"}}
+		>	
+			<CustomLink to="/desktop" onClick={animateIn} style={{width: "100%", height: "100%", position: "absolute", perspective: "64px", cursor: "auto"}}>
+				<div className="computer-screen"></div>
+			</CustomLink>
 			<div className="menu-block">
 				<div>
 					<div className="div-h1-block">
 						<h1>MENU</h1>
 					</div>
 					<nav className="menu-block-nav">
-						<div><span><CustomLink to="/botofolio" onClick={ animateIn }>Botofoilio</CustomLink></span></div>
-						<div><span><CustomLink to="/about" onClick={ animateIn }>About</CustomLink></span></div>
-						<div><span><CustomLink to="/contact" onClick={ animateIn }>Contact</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/botofolio" onClick={ animateIn }>Botofoilio</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/about" onClick={ animateIn }>About</CustomLink></span></div>
+						<div><span><CustomLink to="/desktop/contact" onClick={ animateIn }>Contact</CustomLink></span></div>
 					</nav>
 					<div className="menu-footer">
 						<div id="githubbbutton" onClick={githubClick}>

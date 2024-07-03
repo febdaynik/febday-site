@@ -1,7 +1,6 @@
 import "../../styles/buttonAnimate.css"
 
 const clickButton = (checked) => {
-    console.log('button', checked, Number(!checked))
     localStorage.setItem('animate', Number(!checked))    
 }
 

@@ -7,7 +7,7 @@ export default function LeftPanelComponent() {
 
     return (
         <div className="left-menu-block">
-            <div className="image-app"><img src={filemanager_image} alt="filemanage-app" className="filemanage-app-image"/></div>
+            <div className="image-app active"><img src={filemanager_image} alt="filemanage-app" className="filemanage-app-image"/></div>
             <div className="image-app active"><img src={cmd_image} alt="cmd-app" className="cmd-app-image"/></div>
             <div className="space" />
             <div className="image-app"><img src={userTrash_image} alt="user-trahs" className="userTrash-image"/></div>

@@ -16,9 +16,9 @@ export default function AnimatedRoutes() {
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
 				<Route path='/' element={<Menu />} />
-				<Route path='/botofolio' element={<DesktopPage path='botofolio' />} />
-				<Route path='/about' element={<DesktopPage path='about' />} />
-				<Route path='/contact' element={<DesktopPage path='contact' />} />
+				<Route path='/desktop/botofolio' element={<DesktopPage path='botofolio' />} />
+				<Route path='/desktop/about' element={<DesktopPage path='about' />} />
+				<Route path='/desktop/contact' element={<DesktopPage path='contact' />} />
 				<Route path='/desktop' element={<DesktopPage path='desktop' />} />
 			</Routes>
 		</AnimatePresence>
