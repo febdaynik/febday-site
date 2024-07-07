@@ -69,6 +69,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: move;
 }
 .terminal-header-block > span {
     font-size: 14px;
@@ -134,6 +135,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    cursor: move;
 }
 .explorer-header-block .explorer-header-title {
     font-size: 14px;

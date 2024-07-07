@@ -24,6 +24,9 @@ a{
 	box-shadow: 0px 0px 20px 20px #000000c4;
 	backdrop-filter: blur(8px);
 }
+.menu-block.visible {
+	visibility: visible;
+}
 .menu-block > div{
 	height: 100%;
 	display: grid;
@@ -50,32 +53,71 @@ a{
 	justify-content: center;
 	flex-direction: column;
 	font-weight: 600;
-	font-size: 64px;
+	font-size: 7.5dvb;
 }
-.menu-block-nav > div{
+.menu-block-nav > div {
 	padding: 7.5px;
 }
-.menu-block-nav > div > span:hover{
-	border-bottom: 5px solid #fff;
-	cursor: pointer;
-}
 
-.menu-footer{
+.menu-footer {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
     justify-content: center;
 	font-weight: 800;
 }
-.menu-footer > div{
+.menu-footer > div {
 	display: flex;
 	gap: 15px;
 	align-items: center;
 	cursor: pointer;
 }
-.menu-footer img{
+.menu-footer img {
 	width: 30px;
 	height: 30px;
+}
+
+button.open-menu {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+	z-index: 100;
+	border: none;
+	background: none;
+}
+.open-menu > .burger-button {
+	width: 100%;
+	height: 5px;
+	position: relative;
+	left: 10px;
+	background-color: #fff;
+}
+.open-menu > .burger-button::after, .open-menu > .burger-button::before {
+	content: "";
+	width: 100%;
+	height: 5px;
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	transition: .5s ease-out;
+}
+.open-menu > .burger-button::after {
+	top: 15px;
+}
+.open-menu > .burger-button::before {
+	bottom: 15px;
+}
+.open-menu.visible > .burger-button {
+	background-color: transparent;
+}
+.open-menu.visible > .burger-button::after {
+	top: 0;
+	transform: rotate(45deg);
+}
+.open-menu.visible > .burger-button::before {
+	bottom: 0;
+	transform: rotate(-45deg);
 }
 
 .computer-screen{
@@ -90,7 +132,6 @@ a{
 		rotateY(358deg) 
 		skewX(358.5deg) 
 		skewY(361.5deg);
-	transition: background-image .5s linear;
 	
 }
 .computer-screen::after{
@@ -103,11 +144,26 @@ a{
     height: 100%;
 	top: 0;
 	right: 10px;
-	transition: background-image 0.2s ease;
+}
+
+
+/* Hovers */
+.menu-block-nav > div > span:hover {
+	border-bottom: 5px solid #fff;
+	cursor: pointer;
 }
 .computer-screen:hover{
 	background-color: #1f1914;
 }
 .computer-screen:hover::after{
 	background-color: #1f1914;
+}
+
+/* Media */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.menu-block {
+		width: 100%;
+		padding: 0;
+		visibility: hidden;
+	}
 }
