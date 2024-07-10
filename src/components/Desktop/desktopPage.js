@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'react-responsive';
+import { isBrowser } from 'react-device-detect';
 
 import WatchComponent from './WatchBlock/watch';
 import SettingComponent from './SettingBlock/setting';
@@ -9,12 +9,8 @@ import DesktopPanelComponent from './DesktopPanel/desktopPanel';
 export default function DesktopPage() {
     import('../../styles/desktopPage.css')
 
-    const isDesktopOrLaptop = useMediaQuery(
-		{ minDeviceWidth: 1024 },
-	)
-
     return (
-        isDesktopOrLaptop ? (
+        isBrowser ? (
             <div className='desktop-block'>
                 <header className="desktop-header">
                     <div className="hover-header multi-page-hover">
