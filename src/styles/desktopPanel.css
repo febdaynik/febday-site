@@ -323,31 +323,31 @@
 
 /* Виды папок */
 .folder-default {
-    background: url('../images/icons_ubuntu/256x256/places/folder.png');
+    background: url('../images/desktop_icons/folder.png');
 }
 .folder-user-home {
-    background: url('../images/icons_ubuntu/256x256/places/user-home.png');
+    background: url('../images/desktop_icons/user-home.png');
 }
 .folder-document {
-    background: url('../images/icons_ubuntu/256x256/places/folder-documents.png');
+    background: url('../images/desktop_icons/folder-documents.png');
 }
 .folder-download {
-    background: url('../images/icons_ubuntu/256x256/places/folder-download.png');
+    background: url('../images/desktop_icons/folder-download.png');
 }
 .folder-user-trash {
-    background: url('../images/icons_ubuntu/256x256/places/user-trash.png');
+    background: url('../images/desktop_icons/user-trash.png');
 }
 .folder-paste-image {
-    background: url('../images/icons_ubuntu/256x256/places/folder-paste-image.png');
+    background: url('../images/desktop_icons/folder-paste-image.png');
 }
 .folder-bot {
-    background: url('../images/icons_ubuntu/256x256/places/folder-bot.png');
+    background: url('../images/desktop_icons/folder-bot.png');
 }
 .folder-bot-private {
-    background: url('../images/icons_ubuntu/256x256/places/folder-bot-private.png');
+    background: url('../images/desktop_icons/folder-bot-private.png');
 }
 .folder-text {
-    background: url('../images/icons_ubuntu/256x256/apps/text-folder.png');
+    background: url('../images/desktop_icons/text-folder.png');
     filter: invert(1)
 }
 

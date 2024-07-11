@@ -1,10 +1,10 @@
 import Draggable from 'react-draggable';
 import { Outlet, useNavigate } from 'react-router-dom';
 
-import { ReactComponent as UserHomeSvg } from '../../../images/icons_ubuntu/stable/places/user-home-symbolic.svg';
-import { ReactComponent as UserTrashSvg } from '../../../images/icons_ubuntu/stable/places/user-trash-symbolic.svg';
-import { ReactComponent as ArrowLeftSvg } from '../../../images/icons_ubuntu/stable/ui/pan-start-large-symbolic.svg';
-import { ReactComponent as ArrowRightSvg } from '../../../images/icons_ubuntu/stable/ui/pan-end-large-symbolic.svg';
+import { ReactComponent as UserHomeSvg } from '../../../images/desktop_icons/user-home-symbolic.svg';
+import { ReactComponent as UserTrashSvg } from '../../../images/desktop_icons/user-trash-symbolic.svg';
+import { ReactComponent as ArrowLeftSvg } from '../../../images/desktop_icons/pan-start-large-symbolic.svg';
+import { ReactComponent as ArrowRightSvg } from '../../../images/desktop_icons/pan-end-large-symbolic.svg';
 import { onStartDraggable } from './desktopPanel';
 
 export default function ExplorerComponent() {

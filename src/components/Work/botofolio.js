@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import projects from './bots.json'
-import folderPasteBotImage from '../../images/icons_ubuntu/256x256/places/folder-paste-image-bot.png'
-import folderPastePrivateImage from '../../images/icons_ubuntu/256x256/places/folder-paste-image-private.png'
+import folderPasteBotImage from '../../images/desktop_icons/folder-paste-image-bot.png'
+import folderPastePrivateImage from '../../images/desktop_icons/folder-paste-image-private.png'
 
 export default function Botofolio() {
     return (

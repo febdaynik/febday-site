@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 import {ReactComponent as VolumeIcon} from '../../../images/desktop_icons/sound-loud-filled-svgrepo-com.svg'
 import {ReactComponent as PowerIcon} from '../../../images/desktop_icons/power-standby-svgrepo-com.svg'
-import {ReactComponent as NetworkIcon} from '../../../images/icons_ubuntu/stable/status/network-wireless-signal-excellent-symbolic.svg'
-import screenshotIcon from '../../../images/screenshot-icon.png'
-import settingIcon from '../../../images/setting-icon.png'
-import lockIcon from '../../../images/lock-icon.png'
+import {ReactComponent as NetworkIcon} from '../../../images/desktop_icons/network-wireless-signal-excellent-symbolic.svg'
+import screenshotIcon from '../../../images/desktop_icons/screenshot-icon.png'
+import settingIcon from '../../../images/desktop_icons/setting-icon.png'
+import lockIcon from '../../../images/desktop_icons/lock-icon.png'
 
 export default function SettingComponent() {
     const [modalActive, setModalActive] = useState(false)

@@ -1,6 +1,6 @@
-import filemanager_image from '../../../images/icons_ubuntu/256x256/apps/filemanager-app.png'
-import userTrash_image from '../../../images/icons_ubuntu/256x256/places/user-trash.png'
-import cmd_image from '../../../images/icons_ubuntu/256x256/apps/terminal-app.png'
+import filemanager_image from '../../../images/desktop_icons/filemanager-app.png'
+import userTrash_image from '../../../images/desktop_icons/user-trash.png'
+import cmd_image from '../../../images/desktop_icons/terminal-app.png'
 
 export default function LeftPanelComponent() {
     const tempSpan = Array.from({ length: 9 }, (_, i) => i + 1)

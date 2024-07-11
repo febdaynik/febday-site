@@ -1,4 +1,4 @@
-import { ReactComponent as UserTrashSvg } from '../../../images/icons_ubuntu/stable/places/user-trash-symbolic.svg';
+import { ReactComponent as UserTrashSvg } from '../../../images/desktop_icons/user-trash-symbolic.svg';
 
 export default function TrashComponent() {
     return (
