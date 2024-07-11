@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/febday-site/static/css/main.a06facb1.css",
-    "main.js": "/febday-site/static/js/main.70ff16f3.js",
+    "main.js": "/febday-site/static/js/main.b20b4bf3.js",
     "static/css/49.eb6f6cf1.chunk.css": "/febday-site/static/css/49.eb6f6cf1.chunk.css",
     "static/js/49.c4b721c8.chunk.js": "/febday-site/static/js/49.c4b721c8.chunk.js",
     "static/css/299.ca1a4a0c.chunk.css": "/febday-site/static/css/299.ca1a4a0c.chunk.css",
@@ -32,7 +32,7 @@
     "static/media/pan-start-large-symbolic.svg": "/febday-site/static/media/pan-start-large-symbolic.e104a1c203c1071c5b2f834d9ea5869d.svg",
     "static/media/pan-end-large-symbolic.svg": "/febday-site/static/media/pan-end-large-symbolic.eacbe13a85f31fe5d34a9e97fb625848.svg",
     "main.a06facb1.css.map": "/febday-site/static/css/main.a06facb1.css.map",
-    "main.70ff16f3.js.map": "/febday-site/static/js/main.70ff16f3.js.map",
+    "main.b20b4bf3.js.map": "/febday-site/static/js/main.b20b4bf3.js.map",
     "49.eb6f6cf1.chunk.css.map": "/febday-site/static/css/49.eb6f6cf1.chunk.css.map",
     "49.c4b721c8.chunk.js.map": "/febday-site/static/js/49.c4b721c8.chunk.js.map",
     "299.ca1a4a0c.chunk.css.map": "/febday-site/static/css/299.ca1a4a0c.chunk.css.map",
@@ -40,6 +40,6 @@
   },
   "entrypoints": [
     "static/css/main.a06facb1.css",
-    "static/js/main.70ff16f3.js"
+    "static/js/main.b20b4bf3.js"
   ]
 }
