@@ -13,7 +13,7 @@ import Error404 from './components/Errors/404';
 
 
 const router = createBrowserRouter([
-	{
+	{	
 	  path: "/",
 	  children: [
 		{
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
 		}
 	  ],
 	},
-  ]);
+  ], {basename: process.env.PUBLIC_URL});
 
 
 function App() {
