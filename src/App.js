@@ -9,6 +9,7 @@ import AboutMd from './components/About/about.md';
 import DefaultExplorerComponent from './components/DefaultDesktop/default';
 import TrashComponent from './components/Desktop/DesktopPanel/trash';
 import MarkdownComponent from './components/MarkdownParser/markdown';
+import Error404 from './components/Errors/404';
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
 			}
 		  ]
 		},
+		{
+			path: "*",
+			Component: Error404
+		}
 	  ],
 	},
   ]);
