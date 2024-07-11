@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73b43c51.css",
+    "main.js": "/static/js/main.77795468.js",
+    "static/css/49.eb6f6cf1.chunk.css": "/static/css/49.eb6f6cf1.chunk.css",
+    "static/js/49.c4b721c8.chunk.js": "/static/js/49.c4b721c8.chunk.js",
+    "static/media/background-2.jpg": "/static/media/background-2.85a3d0db2876803278f8.jpg",
+    "static/media/setting-icon.png": "/static/media/setting-icon.1a8cf63f7923565fce52.png",
+    "static/media/lock-icon.png": "/static/media/lock-icon.fbc04dfeea390871f52a.png",
+    "static/media/folder-bot-private.png": "/static/media/folder-bot-private.9f9ce4401a059d5eda44.png",
+    "static/media/folder-paste-image-private.png": "/static/media/folder-paste-image-private.6f93da571b7d5d983e3e.png",
+    "static/media/folder-bot.png": "/static/media/folder-bot.f2881cc5d8f6a76f872d.png",
+    "static/media/folder-paste-image-bot.png": "/static/media/folder-paste-image-bot.cdef15e57cc16eb3ee0a.png",
+    "static/media/folder-paste-image.png": "/static/media/folder-paste-image.e671d47ac662236fb3f9.png",
+    "static/media/user-home.png": "/static/media/user-home.69803680d95dc1640bc2.png",
+    "static/media/folder-download.png": "/static/media/folder-download.cd20d1e7acc21b74e50d.png",
+    "static/media/folder-documents.png": "/static/media/folder-documents.d40e4684e15f144ec616.png",
+    "static/media/filemanager-app.png": "/static/media/filemanager-app.fa201e6ad79a38111d39.png",
+    "static/media/folder.png": "/static/media/folder.8cf28dd680f3e76c91f8.png",
+    "static/media/user-trash.png": "/static/media/user-trash.24fe0f548ef9261af13a.png",
+    "static/media/text-folder.png": "/static/media/text-folder.6016991895348fa7472e.png",
+    "static/media/about.md": "/static/media/about.7487fe350a83367b6e86.md",
+    "static/media/sound-loud-filled-svgrepo-com.svg": "/static/media/sound-loud-filled-svgrepo-com.b5a5675e1e0b0ce78d62019fe9e01fb1.svg",
+    "index.html": "/index.html",
+    "static/media/user-home-symbolic.svg": "/static/media/user-home-symbolic.fb974ebfffa98ac9931fcd23c558cd85.svg",
+    "static/media/user-trash-symbolic.svg": "/static/media/user-trash-symbolic.52c87fa66daf89b762fc587b999a2f86.svg",
+    "static/media/network-wireless-signal-excellent-symbolic.svg": "/static/media/network-wireless-signal-excellent-symbolic.7160a90a3c4ca641d92523b270599b84.svg",
+    "static/media/contact.md": "/static/media/contact.2292189daebd473c7f77.md",
+    "static/media/power-standby-svgrepo-com.svg": "/static/media/power-standby-svgrepo-com.7c2e4900f13134db76e864596e3e9fd6.svg",
+    "static/media/pan-start-large-symbolic.svg": "/static/media/pan-start-large-symbolic.e104a1c203c1071c5b2f834d9ea5869d.svg",
+    "static/media/pan-end-large-symbolic.svg": "/static/media/pan-end-large-symbolic.eacbe13a85f31fe5d34a9e97fb625848.svg",
+    "main.73b43c51.css.map": "/static/css/main.73b43c51.css.map",
+    "main.77795468.js.map": "/static/js/main.77795468.js.map",
+    "49.eb6f6cf1.chunk.css.map": "/static/css/49.eb6f6cf1.chunk.css.map",
+    "49.c4b721c8.chunk.js.map": "/static/js/49.c4b721c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73b43c51.css",
+    "static/js/main.77795468.js"
+  ]
+}
